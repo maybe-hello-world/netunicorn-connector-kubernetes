@@ -2,5 +2,5 @@
 netunicorn.kubernetes.config_file: "~/.kube/config"  # path to kubeconfig file
 netunicorn.kubernetes.namespace: "netunicorn"  # namespace for netunicorn pods
 netunicorn.kubernetes.namespace.create_if_not_exist: True
-netunicorn.kubernetes.show_node_addresses: True  # whether to expose pod IP addresses and DNS names
-netunicorn.kubernetes.show_node_labels: True # whether to expose pod labels
+netunicorn.kubernetes.show_node_addresses: True  # whether to expose node IP addresses and DNS names
+netunicorn.kubernetes.show_node_labels: True # whether to expose node labels
