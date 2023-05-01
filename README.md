@@ -18,7 +18,7 @@ pip install netunicorn-connector-kubernetes
 
 Then, add the connector to the netunicorn-director-infrastructure configuration:
 ```yaml
-  aws-fargate:  # unique name
+  k8s-1:  # unique name
     enabled: true
     module: "netunicorn.director.infrastructure.connectors.k8sconnector"  # where to import from
     class: "KubernetesConnector"  # class name
