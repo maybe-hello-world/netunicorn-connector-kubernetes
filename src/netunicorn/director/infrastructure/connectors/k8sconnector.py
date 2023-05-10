@@ -131,7 +131,9 @@ class KubernetesConnector(NetunicornConnectorProtocol):
 
             node = Node(
                 name=item.metadata.name,
-                properties={},
+                properties={
+                    "netunicorn-environments": {"DockerImage"}
+                },
                 architecture=architecture,
             )
             node.properties["conditions"] = item.status.conditions
